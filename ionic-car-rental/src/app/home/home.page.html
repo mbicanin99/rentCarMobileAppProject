@@ -1,13 +1,12 @@
+<ion-app>
 <ion-header class="ion-no-border">
-  <ion-item lines="none">
-    <ion-avatar slot="end">
+  <ion-item lines="none" class="avatar">
+    <ion-avatar slot="start">
       <img src="assets/profile.jpg">
+      
     </ion-avatar>
-    <ion-button fill="clear" color="light">
-      <ion-icon slot="icon-only" name="menu"></ion-icon>
-    </ion-button>
   </ion-item>
-  <ion-item lines="none">
+  <ion-item lines="none" class="search">
     <div class="ion-padding-start ion-padding-bottom">
       <ion-label>
         <h2>Choose a Car</h2>
@@ -28,19 +27,22 @@
   </ion-item>
 </ion-header>
 
+
+
 <ion-content [fullscreen]="true">
   <div class="ion-padding">
 
-    <ion-row class="ion-align-items-center ion-padding-horizontal">
-      <ion-col size="6">
-        <h5>8 Results</h5>
-      </ion-col>
-      <ion-col size="6" class="ion-text-right">
-        <ion-button fill="clear" color="dark">
-          <ion-icon slot="icon-only" name="ellipsis-horizontal"></ion-icon>
-        </ion-button>
-      </ion-col>
-    </ion-row>
+    <div class="brends">
+        <img src="../../assets/audiLogo.png" class="superdry" alt="">
+        <img src="../../assets/bmwLogo.png" class="theNorthFace" alt="">
+        <img src="../../assets/toyotaLogo.svg" class="underArmour" alt="">
+        <img src="../../assets/nissanLogo.png" class="adidas" alt="">
+        <img src="../../assets/mercedesLogo.png" class="champion" alt="">
+        <img src="../../assets/opelLogo.png" class="nike" alt="">
+        <img src="../../assets/renaultLogo.png" class="lacosta" alt="">
+
+    </div>
+
 
     <ion-card>
       <ion-card-header>
@@ -76,6 +78,42 @@
   </div>
 </ion-content>
 
-<div class="ion-padding">
-  <ion-badge class="ion-text-center" color="danger" mode="ios">Habib Dev.</ion-badge>
-</div>
+
+
+<ion-footer>
+<div class="footer" id="futer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">Sport<span>Line</span></h1>
+                <p>
+                    Our mission is what drives us to do everything
+                    possible to expand human potential. We do that
+                    by creating groundbreaking sport innovations,
+                    by making our products more sustainably, by
+                    building a creative and diverse global team
+                    and by making a positive
+                    impact in communities where we live and work.
+                </p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i>&nbsp; 381-315-389</span>
+                    <span><i class="fas fa-envelope"></i>&nbsp; info@sportline.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+           
+        </div>
+        <div class="footer-bottom">
+            &copy; SportLine.com | Designed by Marko and Danilo
+        </div>
+    </div>
+    </ion-footer>
+
+
+    </ion-app>
+
