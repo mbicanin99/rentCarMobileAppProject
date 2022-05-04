@@ -1,3 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" defaultHref="mainscreen"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
 
   <div class="background-pic">
@@ -15,8 +23,9 @@
 
         <ion-card-content>
           <ion-item>
-            <ion-input type="fullName" name="fullName" placeholder="Full name" #fullName = "ngModel" [(ngModel)] = "signUp.fullName" required fullName></ion-input>
-            <ion-icon class="ion-align-self-center" slot="end" name="person"style="color: rgb(79, 74, 74);"></ion-icon>
+            <ion-input type="fullName" name="fullName" placeholder="Full name" #fullName="ngModel"
+              [(ngModel)]="signUp.fullName" required fullName></ion-input>
+            <ion-icon class="ion-align-self-center" slot="end" name="person" style="color: rgb(79, 74, 74);"></ion-icon>
           </ion-item>
 
           <div *ngIf="fullName.invalid && fullName.touched">
@@ -27,7 +36,8 @@
 
 
           <ion-item>
-            <ion-input type="phoneNumber" name="phoneNumber" placeholder="Phone number" #phoneNumber = "ngModel" [(ngModel)] = "signUp.phoneNumber" required phoneNumber></ion-input>
+            <ion-input type="phoneNumber" name="phoneNumber" placeholder="Phone number" #phoneNumber="ngModel"
+              [(ngModel)]="signUp.phoneNumber" required phoneNumber></ion-input>
             <ion-icon class="ion-align-self-center" slot="end" name="call" style="color: rgb(79, 74, 74);"></ion-icon>
           </ion-item>
 
@@ -40,7 +50,8 @@
 
 
           <ion-item>
-            <ion-input type="email" name="email" placeholder="Email Address" #email = "ngModel" [(ngModel)] = "signUp.email" required email></ion-input>
+            <ion-input type="email" name="email" placeholder="Email Address" #email="ngModel" [(ngModel)]="signUp.email"
+              required email></ion-input>
             <ion-icon class="ion-align-self-center" slot="end" name="mail" style="color: rgb(79, 74, 74);"></ion-icon>
           </ion-item>
 
@@ -49,11 +60,13 @@
               <h4 style="padding-left: 20px; margin-top:10px;">Please write email address</h4>
             </ion-text>
           </div>
-          
+
 
           <ion-item>
-            <ion-input [type]="type ? 'password' : 'text'" name="password" placeholder="Password" #password = "ngModel" [(ngModel)] = "signUp.password" required password></ion-input>
-            <ion-icon class="ion-align-self-center" slot="end" name="eye" style="color: rgb(79, 74, 74);" (click) = "changeType()"></ion-icon>
+            <ion-input [type]="type ? 'password' : 'text'" name="password" placeholder="Password" #password="ngModel"
+              [(ngModel)]="signUp.password" required password></ion-input>
+            <ion-icon class="ion-align-self-center" slot="end" name="eye" style="color: rgb(79, 74, 74);"
+              (click)="changeType()"></ion-icon>
           </ion-item>
 
           <div *ngIf="password.invalid && password.touched">
@@ -61,22 +74,23 @@
               <h4 style="padding-left: 20px; margin-top:10px;">Please write password</h4>
             </ion-text>
           </div>
-         
+
 
           <div class="bottom-section">
-            <ion-button (click) = "navigateToLoginPage()" [disabled]="email.invalid || password.invalid || fullName.invalid || phoneNumber.invalid">
+            <ion-button (click)="navigateToLoginPage()"
+              [disabled]="email.invalid || password.invalid || fullName.invalid || phoneNumber.invalid">
               Sign Up
             </ion-button>
             <span>Already have an account?<a class="signUp" href="http://localhost:8100/login">Sign in</a></span>
           </div>
 
-        
-          
+
+
         </ion-card-content>
 
       </ion-card>
-    
-  </div>
+
+    </div>
   </div>
 
 </ion-content>
