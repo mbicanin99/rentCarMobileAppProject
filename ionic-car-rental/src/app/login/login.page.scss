@@ -1,7 +1,7 @@
-.backButton{
-    background: none;
+ion-toolbar {
+    --background-color: transparent;
+   --ion-color-base: transparent !important;
 }
-
 .ion-no-border{
     background: none;
 }

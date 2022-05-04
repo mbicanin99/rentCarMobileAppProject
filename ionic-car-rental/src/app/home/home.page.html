@@ -1,22 +1,27 @@
-
 <ion-header class="ion-no-border">
   <ion-item lines="none" class="avatar">
     <ion-avatar slot="start">
-      <img src="assets/profile.jpg">
-      
+      <ion-menu-toggle menu="main-menu">
+        <img src="../../assets/male.png">
+      </ion-menu-toggle>
     </ion-avatar>
+
+    Hello&nbsp;<strong> Marko!</strong>
+
+
+    <ion-icon name="log-out" slot="end" color="dark"></ion-icon>
   </ion-item>
   <ion-item lines="none" class="search">
     <div class="ion-padding-start ion-padding-bottom">
       <ion-label>
-        <h2>Choose a Car</h2>
+        <h2>Search a Car</h2>
       </ion-label>
 
       <ion-row class="ion-align-items-center">
-        <ion-col size="10">
+        <ion-col size="10" offset="1">
           <ion-searchbar placeholder="Oman, Muscat" searchIcon="location-outline"></ion-searchbar>
         </ion-col>
-        <ion-col size="2">
+        <ion-col size="1">
           <ion-button color="light" fill="clear">
             <ion-icon slot="icon-only" name="options-outline"></ion-icon>
           </ion-button>
@@ -33,13 +38,13 @@
   <div class="ion-padding">
 
     <div class="brends">
-        <img src="../../assets/audiLogo.png" class="superdry" alt="">
-        <img src="../../assets/bmwLogo.png" class="theNorthFace" alt="">
-        <img src="../../assets/toyotaLogo.svg" class="underArmour" alt="">
-        <img src="../../assets/nissanLogo.png" class="adidas" alt="">
-        <img src="../../assets/mercedesLogo.png" class="champion" alt="">
-        <img src="../../assets/opelLogo.png" class="nike" alt="">
-        <img src="../../assets/renaultLogo.png" class="lacosta" alt="">
+      <img src="../../assets/audiLogo.png" class="superdry" alt="">
+      <img src="../../assets/bmwLogo.png" class="theNorthFace" alt="">
+      <img src="../../assets/toyotaLogo.svg" class="underArmour" alt="">
+      <img src="../../assets/nissanLogo.png" class="adidas" alt="">
+      <img src="../../assets/mercedesLogo.png" class="champion" alt="">
+      <img src="../../assets/opelLogo.png" class="nike" alt="">
+      <img src="../../assets/renaultLogo.png" class="lacosta" alt="">
 
     </div>
 
@@ -64,7 +69,7 @@
         <ion-row>
           <ion-col size="8">
             <ion-card-title>Car Title</ion-card-title>
-            <ion-card-subtitle>From 15 OMR / day</ion-card-subtitle>
+            <ion-card-subtitle>From 15 $ / day</ion-card-subtitle>
           </ion-col>
           <ion-col size="4" class="ion-text-right">
             <ion-button fill="clear" color="dark" size="large" routerLink="/details">
@@ -75,12 +80,15 @@
       </ion-card-content>
     </ion-card>
 
+
+
   </div>
 </ion-content>
 
 
 
-<ion-footer>
+
+<!-- <ion-footer>
 <div class="footer" id="futer">
         <div class="footer-content">
             <div class="footer-section about">
@@ -112,6 +120,4 @@
             &copy; SportLine.com | Designed by Marko and Danilo
         </div>
     </div>
-    </ion-footer>
-
-
+    </ion-footer> -->
